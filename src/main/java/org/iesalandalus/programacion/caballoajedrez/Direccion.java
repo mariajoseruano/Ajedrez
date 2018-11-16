@@ -9,6 +9,7 @@ package org.iesalandalus.programacion.caballoajedrez;
  *
  * @author Usuario
  */
+// Enumerado Dirección
 
      public enum Direccion 
 {
