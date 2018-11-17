@@ -53,6 +53,15 @@ public class Posicion {
         setColumna(columna);
         }
        
-       
+        //Ejercicio 8 Constructor Copia
+         public Posicion(final Posicion pos)
+    {
+        //Comprobamos que el objeto pasado como parámetro no es nulo
+        if (pos==null)
+            throw new IllegalArgumentException("ERROR: La posicion pasada como parámetro es null");
+        
+        this.fila=pos.fila;
+        this.columna=pos.columna;
+    }
        
 }
