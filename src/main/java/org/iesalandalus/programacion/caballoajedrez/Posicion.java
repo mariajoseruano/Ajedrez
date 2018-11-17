@@ -5,6 +5,8 @@
  */
 package org.iesalandalus.programacion.caballoajedrez;
 
+import java.util.Objects;
+
 /**
  *
  * @author Usuario
@@ -55,13 +57,36 @@ public class Posicion {
        
         //Ejercicio 8 Constructor Copia
          public Posicion(final Posicion pos)
-    {
+        {
         //Comprobamos que el objeto pasado como parámetro no es nulo
         if (pos==null)
             throw new IllegalArgumentException("ERROR: La posicion pasada como parámetro es null");
         
         this.fila=pos.fila;
         this.columna=pos.columna;
-    }
+        }
+         // Ejercicio 9: Método equals: comparar la igualdad de dos objetos de esta clase
+         
+        public boolean equals(Posicion pos) {
        
+           
+        if (posicion.equals(posicion pos))
+
+        System.out.println("Son iguales");
+
+        else
+
+        System.out.println("Son distintas");
+        
+        }
+        
+        //Ejercicio 10: Método toString devolver un String y será la representación de fila y columna.
+        
+        
+        
+        public String toString() 
+        {
+		return "Posicion [fila=" + fila + ", columna=" + columna + "]";
+	}
+
 }
