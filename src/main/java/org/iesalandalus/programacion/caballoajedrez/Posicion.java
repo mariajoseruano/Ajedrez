@@ -18,17 +18,17 @@ public class Posicion {
     
        
     //Getter fila:Método que devuelve el valor de una fila
-    public int getfila(){
+    public int getFila(){
 	return fila;
     }
 
     //Getter columna:Método que devuelve el valor de una columna
-    public char getcolumna(){
+    public char getColumna(){
 	return columna;
     }
 
     // Setter fila:Método que modifica la fila
-     public void setfila(int fila) 
+     public void setFila(int fila) 
     {
         if (fila<=0 || fila>8)
             this.fila = fila;
@@ -37,12 +37,13 @@ public class Posicion {
             throw new IllegalArgumentException("La fila introducida como parámetro no es válida");            
     }
    // Setter columna
-     public void setcolumna(char columna) 
+     public void setColumna(char columna) 
     {
-        if (columna<a || columna>=i)
+       if (columna<'a' || columna>='i')
             this.columna= columna;
         else
             throw new IllegalArgumentException("La columna introducida como parámetro no es válida");            
     }
-        
+      
+       
 }
