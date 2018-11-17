@@ -44,6 +44,15 @@ public class Posicion {
         else
             throw new IllegalArgumentException("La columna introducida como parámetro no es válida");            
     }
-      
+       // Ejercicio: 7.Constructor que inicializa todos los atributos a través de parámetros
+    
+       public Posicion ( int fila, char columna)
+        {  
+    
+        setFila(fila);
+        setColumna(columna);
+        }
+       
+       
        
 }
