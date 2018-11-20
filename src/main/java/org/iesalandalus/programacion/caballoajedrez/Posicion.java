@@ -32,7 +32,7 @@ public class Posicion {
     // Setter fila:Método que modifica la fila
      public void setFila(int fila) 
     {
-        if (fila<=0 || fila>8)
+        if (fila<0 || fila>8)
             this.fila = fila;
         else
      
@@ -68,16 +68,13 @@ public class Posicion {
          // Ejercicio 9: Método equals: comparar la igualdad de dos objetos de esta clase
          
         public boolean equals(Posicion pos) {
-       
            
-        if (posicion.equals(posicion pos))
+            if (pos.getFila() == this.fila && pos.getColumna()==this.columna ){
 
-        System.out.println("Son iguales");
-
-        else
-
-        System.out.println("Son distintas");
-        
+                return true;
+            }else{
+                return false;
+            }
         }
         
         //Ejercicio 10: Método toString devolver un String y será la representación de fila y columna.
